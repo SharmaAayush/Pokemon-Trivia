@@ -33,9 +33,6 @@ export class PrettyComponent implements OnInit {
             this.addWeakness(weakness);
           });
         });
-        console.log(this.pokemon_data);
-        console.log(this.top_ten_pokemon);
-        console.log(this.weaknesses);
       });
   }
 

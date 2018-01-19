@@ -22,7 +22,6 @@ export class DetailsComponent implements OnInit {
           this.pokemon = this.pokemon_data.find(function(pokemon) {
             return pokemon.num === params['num'];
           });
-          console.log(this.pokemon);
         }
       );
     });
