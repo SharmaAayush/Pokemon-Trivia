@@ -1,10 +1,10 @@
 # PokemonTrivia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
-It is the solution to the Challange 1 - Front End Challenge - Pokemon Trivia.
-There are two tabs in the navbar when this project is viewd on the browser - Basic Table, and Pretty Look.
-Basic Table tab presents the required solution in a simple table.
-Pretty Look tab shows the solution with a better and more appealing style.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0. <br>
+It is the solution to the Challange 1 - Front End Challenge - Pokemon Trivia. <br>
+There are two tabs in the navbar when this project is viewd on the browser - Basic Table, and Pretty Look. <br>
+Basic Table tab presents the required solution in a simple table. <br>
+Pretty Look tab shows the solution with a better and more appealing style. <br>
 
 ## Libraries and Frameworks used
 
