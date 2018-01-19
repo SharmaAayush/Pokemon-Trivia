@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-4">
+    <ul class="list-group">
+      <a
+        *ngFor="let pokemon of top_ten_pokemon" 
+        [routerLink]="['/pretty', pokemon.num]"
+      >
+      <li class="list-group-item">
+        <span class="pull-left">
+          <img src="{{pokemon.img}}" alt="{{pokemon.name}}" class="img-responsive" style="max-height: 50px;">
+        </span>
+        <h3>&nbsp;&nbsp;{{pokemon.name}}</h3>
+      </li>
+    </a>
+    </ul>
+  </div>
+  <div class="col-xs-8">
+    <router-outlet></router-outlet>
+  </div>
+</div>

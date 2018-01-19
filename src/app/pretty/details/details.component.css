@@ -1,0 +1,22 @@
+.my-weakness {
+  padding: 0.5em;
+  border-radius: 35%;
+}
+
+.my-container {
+  width: 130px;
+  height: auto;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.my-evolution-arrow {
+  display: table;
+  height: 150px;
+}
+
+.my-arrow {
+  display: table-cell;
+  vertical-align: middle;
+}

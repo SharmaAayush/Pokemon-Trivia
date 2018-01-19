@@ -1,29 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<app-header [title]="title"></app-header>
 
-<table class="table table-striped table-bordered table-condensed" >
-  <tr>
-    <th>#</th>
-    <th>Pokemon</th>
-    <th>Evolution Chain</th>
-    <th>Spawn Chances</th>
-    <th>Weaknesses</th>
-  </tr>
-  <tr *ngFor="let pokemon of top_ten_pokemon" >
-    <td>{{pokemon.id}}</td>
-    <td>{{pokemon.name}}</td>
-    <td>
-      <span *ngFor="let evolution of pokemon.prev_evolution">{{evolution.name}} --> </span>
-      <span>{{pokemon.name}}</span>
-      <span *ngFor="let evolution of pokemon.next_evolution"> --> {{evolution.name}}</span>
-    </td>
-    <td>{{pokemon.spawn_chance}}</td>
-    <td>
-      <span *ngFor="let weakness of pokemon.weaknesses">{{weakness}}: <span>{{getWeakness(weakness).number_of_pokemons}} <br></span></span>
-    </td>
-  </tr>
-</table>
+<router-outlet></router-outlet>

@@ -1,0 +1,78 @@
+<div *ngIf="pokemon">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 style="text-align: center;">{{pokemon.name}}</h2>
+      <table class="table table-condensed" style="display: inline-block; vertical-align: top;">
+        <tr>
+          <td rowspan="6">
+            <img src="{{pokemon.img}}" alt="{{pokemon.name}}" class="img-responsive">
+          </td>
+        </tr>
+        <tr>
+          <th>Pokemon type:</th>
+          <td><span *ngFor="let type of pokemon.type">{{type}}, </span></td>
+        </tr>
+        <tr>
+          <th>Pokedex Entry:</th>
+          <td>{{pokemon.num}}</td>
+        </tr>
+        <tr>
+          <th>Spawn Chances</th>
+          <td>{{pokemon.spawn_chance}}</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>{{pokemon.height}}</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>{{pokemon.weight}}</td>
+        </tr>
+      </table>
+
+      <table class="table table-striped">
+        <tr>
+          <td></td>
+          <th>Weakness</th>
+          <th>Total pokemons that have this weakness</th>
+        </tr>
+        <tr>
+          <th rowspan="5" style="vertical-align: middle;">
+            Weaknesses
+          </th>
+        </tr>
+        <tr *ngFor="let weakness of pokemon.weaknesses; let i = index">
+          <td><span class="my-weakness bg-danger">{{weakness}}</span></td>
+          <td>{{getWeakness(weakness)}}</td>
+        </tr>
+      </table>
+
+      <br>
+      <h2 style="text-align: center;">Evolution-Chain</h2>
+      <div>
+        <div class="my-container" *ngFor="let evolution of pokemon.prev_evolution">
+          <div class="col-xs-8">
+            <img src="{{getImgUrl(evolution.num)}}" alt="{{evolution.name}}" style="display: inline-block">
+            <span style="text-align: center">{{evolution.name}}</span>
+          </div>
+          <div class="col-xs-4">
+            <div class="my-evolution-arrow"><span class="my-arrow glyphicon glyphicon-arrow-right"></span></div>
+          </div>
+        </div>
+        <div class="my-container">
+          <img src="{{pokemon.img}}" alt="{{pokemon.name}}" style="display: inline-block">
+          <span style="text-align: center">{{pokemon.name}}</span>
+        </div>
+        <div class="my-container" *ngFor="let evolution of pokemon.next_evolution">
+          <div class="col-xs-4">
+              <div class="my-evolution-arrow"><span class="my-arrow glyphicon glyphicon-arrow-right"></span></div>
+          </div>
+          <div class="col-xs-8">
+            <img src="{{getImgUrl(evolution.num)}}" alt="{{evolution.name}}" style="display: inline-block">
+            <span style="text-align: center">{{evolution.name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
