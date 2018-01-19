@@ -8,9 +8,9 @@ Pretty Look tab shows the solution with a better and more appealing style.
 
 ## Libraries and Frameworks used
 
-[Angular](https://cli.angular.io/).
-[Bootstrap](https://getbootstrap.com/docs/3.3/).
-[United Theme For Bootstrap](https://bootswatch.com/3/united/).
+[Angular](https://cli.angular.io/). <br>
+[Bootstrap](https://getbootstrap.com/docs/3.3/). <br>
+[United Theme For Bootstrap](https://bootswatch.com/3/united/). <br>
 
 ## Instructions to run locally
 
