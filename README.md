@@ -25,7 +25,7 @@ Pretty Look tab shows the solution with a better and more appealing style. <br>
   "git clone https://github.com/SharmaAayush/Pokemon-Trivia.git my-proj".
 2. Run the command prompt in the root directory of the project (my-proj in our case).
 3. Run the command "npm install" without the quotes to install all the dependencies.
-4. Run the command "ng serve --open" without the quotes to start the lite-serer on port 4200. To run on any specific port, just provide the "--port" flag followed by the port number. The "--open" will open the project in the browser automatically.
+4. Run the command "ng serve --open" without the quotes to start the lite-serer on port 4200. To run on any specific port, just provide the "--port" flag followed by the port number. The "--open" flag will open the project in the browser automatically.
 
 ## Development server
 
