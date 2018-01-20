@@ -76,3 +76,17 @@
     </div>
   </div>
 </div>
+
+<div *ngIf="!pokemon">
+  <div class="panel-panel-default">
+    <div class="panel-heading">
+      <h3 style="text-align: center;">Pokemon not found.</h3>
+    </div>
+    <div class="panel-body">
+      <p style="text-align: center;">Please make sure the url is correct. Url should end with "/pretty/:id", 
+        where :id is a 3 digit number representing the pokedex entry of first 151 pokemons.
+      </p>
+      <p style="text-align: center;">For example the :id for Charmeleon will be 005 and not just 5.</p>
+    </div>
+  </div>
+</div>
