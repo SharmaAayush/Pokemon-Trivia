@@ -12,13 +12,20 @@ Pretty Look tab shows the solution with a better and more appealing style. <br>
 [Bootstrap](https://getbootstrap.com/docs/3.3/). <br>
 [United Theme For Bootstrap](https://bootswatch.com/3/united/). <br>
 
+## Requirements
+
+1. Make sure you have the latest version of Node.js installed. You can gaet Node.js from [here](https://nodejs.org/en/).
+2. Make sure you have Angular CLI. You can get Angular CLI by running "npm install -g @angular/cli".
+
+<!-- https://github.com/SharmaAayush/Pokemon-Trivia.git -->
+
 ## Instructions to run locally
 
-1.Make sure you have the latest version of Node.js insttalled. You can get Node.js from [here](https://nodejs.org/en/).</a>  <br>
-2.Make sure you have Angular CLI. You can get Angular CLI by running "npm install -g @angular/cli". <br>
-3.Run the command prompt in the root directory of PokemonTrivia.  <br>
-4.Run the command "npm install" without the quotes and wait for it to finish.  <br>
-5.Run the command "ng serve --open" without quotes and wait for it to finish. It will open the app in a browser page.
+1. Download this repository and extract in a folder or clone this repo into a new folder (e.g., my-proj) by running 
+  "git clone https://github.com/SharmaAayush/Pokemon-Trivia.git my-proj".
+2. Run the command prompt in the root directory of the project (my-proj in our case).
+3. Run the command "npm install" without the quotes to install all the dependencies.
+4. Run the command "ng serve --open" without the quotes to start the lite-serer on port 4200. To run on any specific port, just provide the "--port" flag followed by the port number. The "--open" will open the project in the browser automatically.
 
 ## Development server
 
